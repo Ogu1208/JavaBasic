@@ -1,4 +1,4 @@
-package com.codechobo.book;
+
 import static java.lang.Integer.*;
 import static java.lang.Math.*;
 import static java.lang.System.out;
