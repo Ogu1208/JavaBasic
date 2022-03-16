@@ -3,6 +3,7 @@ package ch07;
 class SutdaDeck {
 	final int CARD_NUM = 20;
 	SutdaCard[] cards = new SutdaCard[CARD_NUM];
+	
 	SutdaDeck() {
 		for(int i = 0; i < cards.length; i++) {
 			int num = i % 10 + 1;
@@ -10,6 +11,26 @@ class SutdaDeck {
 			
 			cards[i] = new SutdaCard(num, isKwang);
 		}
+	}
+	
+	void shuffle() {
+		for(int i = 0; i < cards.length; i++) {
+			int j = (int)(Math.random()*cards.length);
+			SutdaCard tmp = cards[i];
+			cards[i] = cards[j];
+			cards[j] = tmp;
+		}
+	}
+	
+	SutdaCard pick(int index) {
+		if(index < 0 || index > CARD_NUM) return null;
+		return cards[index];
+	}
+	
+	
+	SutdaCard index() {
+		int tmp = (int)(Math.random()*cards.length);
+		return cards[tmp];
 	}
 }
 
