@@ -1,5 +1,5 @@
 
-public class Ex8_3 {
+public class Ex8_5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,8 +10,9 @@ public class Ex8_3 {
 			System.out.println(3);
 			System.out.println(0/0);
 			System.out.println(4);
-		} catch(Exception e) {  // ArithmeticException의 조상
-			System.out.println(5);
+		} catch(ArithmeticException ae) {
+			ae.printStackTrace();
+			System.out.println("예외메시지 : " + ae.getMessage());
 		}
 		System.out.println(6);
 	}
