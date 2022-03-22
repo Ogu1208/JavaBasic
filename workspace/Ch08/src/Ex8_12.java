@@ -10,12 +10,13 @@ public class Ex8_12 {
 		}
 	}
 
-	static void method1() throws Exception {
+	static void method1() throws Exception {   
+		// 선언부에 발생할 예외를  throws에 지정해야함
 		try {
 			throw new Exception();
 		} catch(Exception e) {
 			System.out.println("method1메서드에서 예외가 처리되었습니다.");
-			throw e;
+			throw e;  // 예외 되던지기 (예외를 다시 발생)
 		}
 	}
 }
