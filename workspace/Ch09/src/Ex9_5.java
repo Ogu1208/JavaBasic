@@ -25,7 +25,7 @@ public class Ex9_5 {
 		Card2 c2 = new Card2("HEART", 10);
 		
 		System.out.println(c1.toString());
-		System.out.println(c2.toString("HEART", 10));
+		System.out.println(c2.toString());
 	}
 
 }
