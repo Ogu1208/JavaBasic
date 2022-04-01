@@ -25,7 +25,7 @@ public class Ex10_5 {
 		
 		END_DAY = eDay.get(Calendar.DATE);
 		
-		System.out.println("     " + args[0] + "년 " + args[1] + "월 ");
+		System.out.println("      " + args[0] + "년 " + args[1] + "월 ");
 		System.out.println(" SU MO TU WE TH FR SA");
 		
 		for(int i = 1; i < START_DAY_OF_WEEK; i++)
